@@ -75,8 +75,8 @@ def categorize_tld(tld):
     # Most of the other categories are country code categories (other than french)
     if tld in CCTLD:  # Not french country code tld
         return 'cctld'
-    else:
-        return 'other'
+    
+    return 'other'
 
 
 def categorize_subdomain(subdomain):
@@ -87,8 +87,8 @@ def categorize_subdomain(subdomain):
         return 'fr_subdomain'
     if subdomain in ['dictionnaire', 'mobile-dictionary', 'dict']:
         return 'dict'
-    else:
-        return 'other_subdomain'
+    
+    return 'other_subdomain'
 
 
 def get_labels_vector(df, nb_labels=100):
