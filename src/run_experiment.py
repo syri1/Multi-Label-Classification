@@ -25,7 +25,7 @@ def train(X_train, y_train, model_type='ovr'):
     if model_type == 'ovr':
         classifier = OneVsRestClassifier(
 
-            LogisticRegression(penalty='l1', solver='liblinear', n_jobs=-1, class_weight={0: 1, 1: 4}, verbose=True))
+            LogisticRegression(penalty='l1', solver='liblinear', n_jobs=-1, class_weight={0: 1, 1: 4}))
 
     elif model_type == 'multioutput':
         forest = RandomForestClassifier(n_jobs=-1,
