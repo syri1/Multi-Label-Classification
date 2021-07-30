@@ -59,8 +59,6 @@ def test(X_test, threshold,  model_path='model.pkl'):
             row_highest_probas = [0, 0, 0, 0, 0]
             for j in range(y_pred.shape[1]):
                 if probas[i, j] > row_highest_probas[0]:  # if larger than the minimum
-                    # save the position of the item in the row (column index)
-                    #row_highest_probas_indices[bisect.bisect(row_highest_probas, probas[i,j])-1] = j
                     bisect.insort(row_highest_probas, probas[i, j])
                     row_highest_probas.pop(0)
             for j in range(y_pred.shape[1]):
