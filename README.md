@@ -11,6 +11,13 @@ git clone https://github.com/syri1/Multi-Label-Classification.git && cd Multi-La
 pip install -r requirements.txt
 ```
 
+**Note** 
+- Use Python 3.9.5
+
+- If hdbscan installation throws an error, if you are using conda, you could try to install it with :
+```bash
+conda install -c conda-forge hdbscan 
+```
 ## Running the code on your own data :
 In order to use this project, you need to run the main.py script and specify the appropriate parameters :
 * --mode : "train", "test" or "train-test". Default is "train-test"
@@ -44,7 +51,7 @@ To reproduce the results stated below, set the variable path to the path of the 
 <br>
 <br>
   <p align="center">
-    <img width="320" height="200" src=./conditional_distribution_labels_counts.png>
+    <img width="320" height="200" src="conditional_distribution_labels_counts.png">
   </p>
   <br>
 
