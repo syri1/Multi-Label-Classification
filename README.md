@@ -3,7 +3,7 @@
 ## Setup
 1/ Clone the repository
 ```bash
-clone https://github.com/syri1/Multi-Label-Classification.git && cd Multi-Label-Classification
+git clone https://github.com/syri1/Multi-Label-Classification.git && cd Multi-Label-Classification
 ```
 
 2/ Install the required libraries
